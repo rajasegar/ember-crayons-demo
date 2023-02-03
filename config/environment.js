@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'my-app',
+    modulePrefix: 'ember-crayons-demo',
     environment,
     rootURL: '/',
     locationType: 'auto',
@@ -45,6 +45,8 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    ENV.rootURL = "/ember-crayons-demo/";
+    ENV.locationType = "hash";
   }
 
   return ENV;
